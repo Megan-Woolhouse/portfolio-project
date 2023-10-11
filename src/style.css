@@ -1,8 +1,92 @@
-h1 {
-  font-family: "AR One Sans", sans-serif;
-  font-weight: bold;
+:root {
+  --heading-font: "AR One Sans", sans-serif;
+  --default-font: "Mohave", sans-serif;
 }
 
-p {
-  font-family: "Mohave", sans-serif;
+h1 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-align: center;
+  font-size: 58px;
+  padding-top: 80px;
+}
+
+.hero p {
+  font-family: var(--default-font);
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.navbar-font {
+  font-family: var(--default-font);
+}
+
+.hero {
+  padding-top: 50px;
+  background-color: #bdbbb0;
+}
+
+.avatar {
+  width: 310px;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  text-align: center;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.recent-projects {
+  text-align: center;
+  font-family: var(--default-font);
+  font-size: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.recent-projects img {
+  background-color: #bdbbb0;
+}
+
+footer {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #bdbbb0;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    padding-top: 20px;
+    font-size: 42px;
+  }
+  .hero p {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .avatar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+    padding-top: 20px;
+  }
+  .hero p {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .avatar {
+    width: 200px;
+  }
 }
