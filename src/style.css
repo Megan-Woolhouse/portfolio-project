@@ -3,12 +3,20 @@
   --default-font: "Mohave", sans-serif;
 }
 
+.navbar-font {
+  font-family: var(--default-font);
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: bold;
   text-align: center;
   font-size: 58px;
   padding-top: 80px;
+}
+
+p {
+  font-family: var(--default-font);
 }
 
 .hero p {
@@ -18,11 +26,19 @@ h1 {
   font-size: 30px;
 }
 
-.navbar-font {
+.hero-about p {
   font-family: var(--default-font);
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
 }
 
 .hero {
+  padding-top: 50px;
+  background-color: #bdbbb0;
+}
+
+.hero-about {
   padding-top: 50px;
   background-color: #bdbbb0;
 }
@@ -63,7 +79,58 @@ footer a {
   color: #bdbbb0;
 }
 
-@media (max-width: 900px) {
+.certificates {
+  text-align: center;
+  font-family: var(--default-font);
+  font-size: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.about-me {
+  padding: 30px 220px;
+}
+
+.projects-header {
+  background-color: #bdbbb0;
+  padding: 70px 0;
+}
+
+h3 {
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+
+.tool-logos img {
+  max-width: 50px;
+}
+
+.project-image {
+  text-align: center;
+  font-family: var(--default-font);
+  font-size: 30px;
+  max-width: 90%;
+  margin: 50px auto;
+}
+
+.project-description {
+  vertical-align: middle;
+}
+
+.project-button {
+  background-color: #bdbbb0;
+  font-family: var(--default-font);
+  font-weight: bold;
+  color: black;
+}
+
+@media (max-width: 1400px) {
+  .tool-logos img {
+    max-width: 40px;
+  }
+}
+
+@media (max-width: 950px) {
   h1 {
     padding-top: 20px;
     font-size: 42px;
@@ -72,17 +139,41 @@ footer a {
     font-size: 20px;
     padding-top: 30px;
   }
+  .hero-about {
+    padding-bottom: 20px;
+  }
   .avatar {
     width: 250px;
   }
+  .hero-about p {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .about-me {
+    padding: 10px;
+    margin: 0 35px;
+  }
+  .tool-logos img {
+    max-width: 30px;
+  }
+  .project-description {
+    font-size: 24px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   h1 {
     font-size: 32px;
-    padding-top: 20px;
+    padding-top: 0;
   }
   .hero p {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+  .hero-about {
+    padding-bottom: 20px;
+  }
+  .hero-about p {
     font-size: 18px;
     padding-top: 10px;
   }
@@ -91,5 +182,20 @@ footer a {
   }
   footer {
     font-size: 30px;
+  }
+  .about-me {
+    padding: 10px;
+    margin: 0 35px;
+  }
+  .tool-logos img {
+    max-width: 20px;
+  }
+  .projects-header {
+    padding: 30px 0;
+  }
+  .project-description {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
   }
 }
