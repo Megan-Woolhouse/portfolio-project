@@ -119,6 +119,31 @@ h3 {
   color: black;
 }
 
+.contact-info {
+  margin: 20px 40px;
+  font-size: 28px;
+}
+
+.form {
+  font-family: var(--default-font);
+}
+
+#submit {
+  display: block;
+  margin: 20px auto;
+  background-color: #bdbbb0;
+  padding: 5px 20px;
+  font-family: var(--default-font);
+  border: solid 1px #bdbbb0;
+  transition: all ease-in-out 150ms;
+}
+
+#submit:hover {
+  background-color: white;
+  color: #bdbbb0;
+  border: solid 1px #bdbbb0;
+}
+
 @media (max-width: 1400px) {
   .tool-logos img {
     max-width: 40px;
@@ -162,6 +187,9 @@ h3 {
   .project-description h2 {
     padding-top: 0;
   }
+  .contact-info {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -200,5 +228,8 @@ h3 {
     font-size: 16px;
     margin: 0;
     padding: 0;
+  }
+  .contact-info {
+    font-size: 18px;
   }
 }
