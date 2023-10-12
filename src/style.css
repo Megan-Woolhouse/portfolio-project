@@ -19,28 +19,16 @@ p {
   font-family: var(--default-font);
 }
 
-.hero p {
-  font-family: var(--default-font);
-  text-align: center;
-  padding-top: 50px;
-  font-size: 30px;
-}
-
-.hero-about p {
-  font-family: var(--default-font);
-  text-align: center;
-  padding-top: 50px;
-  font-size: 30px;
-}
-
 .hero {
   padding-top: 50px;
   background-color: #bdbbb0;
 }
 
-.hero-about {
+.hero p {
+  font-family: var(--default-font);
+  text-align: center;
   padding-top: 50px;
-  background-color: #bdbbb0;
+  font-size: 30px;
 }
 
 .avatar {
@@ -79,16 +67,27 @@ footer a {
   color: #bdbbb0;
 }
 
+.hero-about {
+  padding-top: 50px;
+  background-color: #bdbbb0;
+}
+.hero-about p {
+  font-family: var(--default-font);
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.about-me {
+  padding: 30px 220px;
+}
+
 .certificates {
   text-align: center;
   font-family: var(--default-font);
   font-size: 30px;
   max-width: 80%;
   margin: 0 auto;
-}
-
-.about-me {
-  padding: 30px 220px;
 }
 
 .projects-header {
@@ -113,10 +112,6 @@ h3 {
   margin: 50px auto;
 }
 
-.project-description {
-  vertical-align: middle;
-}
-
 .project-button {
   background-color: #bdbbb0;
   font-family: var(--default-font);
@@ -127,6 +122,9 @@ h3 {
 @media (max-width: 1400px) {
   .tool-logos img {
     max-width: 40px;
+  }
+  .project-description h2 {
+    padding-top: 0;
   }
 }
 
@@ -139,11 +137,13 @@ h3 {
     font-size: 20px;
     padding-top: 30px;
   }
-  .hero-about {
-    padding-bottom: 20px;
-  }
+
   .avatar {
     width: 250px;
+  }
+
+  .hero-about {
+    padding-bottom: 20px;
   }
   .hero-about p {
     font-size: 20px;
@@ -157,7 +157,10 @@ h3 {
     max-width: 30px;
   }
   .project-description {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .project-description h2 {
+    padding-top: 0;
   }
 }
 
