@@ -96,6 +96,14 @@ footer a {
   margin: 0 auto;
 }
 
+.cv {
+  text-align: center;
+  font-size: 22px;
+}
+.cv a {
+  color: var(--brand-color);
+}
+
 .projects-header {
   background-color: var(--brand-color);
   padding: 70px 0;
