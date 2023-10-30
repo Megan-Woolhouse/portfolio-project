@@ -93,7 +93,7 @@ footer a {
   font-family: var(--default-font);
   font-size: 30px;
   max-width: 80%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .cv {
